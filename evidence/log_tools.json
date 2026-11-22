@@ -1,0 +1,552 @@
+{
+  "execution": "Offline invocations of the actual LangChain tools; no LLM or delegation run.",
+  "dataset": "data/sample_logs.json",
+  "dataset_sha256": "7d16eec989c98fea323875354181044b2bb997d32693bd475bd57af309123229",
+  "cases": [
+    {
+      "tool": "get_log_catalog",
+      "arguments": {},
+      "result": {
+        "status": "ok",
+        "record_count": 121,
+        "timezone": "UTC",
+        "earliest_timestamp": "2026-11-03T00:00:20Z",
+        "latest_timestamp": "2026-11-03T23:29:12Z",
+        "log_types": [
+          "api",
+          "auth",
+          "database",
+          "payment",
+          "scheduler"
+        ],
+        "levels": [
+          "ERROR",
+          "INFO",
+          "WARNING"
+        ],
+        "services": [
+          "api-gateway",
+          "auth-service",
+          "job-scheduler",
+          "payment-service",
+          "postgres"
+        ]
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "start_time": "2026-11-03T14:00:00Z",
+        "end_time": "2026-11-03T14:30:00Z",
+        "log_type": "payment",
+        "level": "ERROR"
+      },
+      "result": {
+        "status": "ok",
+        "total_matches": 8,
+        "returned_count": 8,
+        "limit": 20,
+        "offset": 0,
+        "has_more": false,
+        "next_offset": null,
+        "records": [
+          {
+            "id": "LOG-0064",
+            "timestamp": "2026-11-03T14:03:34Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-52132: database timeout after 5000ms",
+            "request_id": "req-f30017"
+          },
+          {
+            "id": "LOG-0066",
+            "timestamp": "2026-11-03T14:05:20Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-48603: database timeout after 5000ms",
+            "request_id": "req-1f620f"
+          },
+          {
+            "id": "LOG-0068",
+            "timestamp": "2026-11-03T14:07:40Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-12875: database timeout after 5000ms",
+            "request_id": "req-f5139f"
+          },
+          {
+            "id": "LOG-0070",
+            "timestamp": "2026-11-03T14:09:32Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-51853: database timeout after 5000ms",
+            "request_id": "req-3ecf53"
+          },
+          {
+            "id": "LOG-0073",
+            "timestamp": "2026-11-03T14:12:11Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-26045: database timeout after 5000ms",
+            "request_id": "req-7ce8c8"
+          },
+          {
+            "id": "LOG-0075",
+            "timestamp": "2026-11-03T14:15:34Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-55989: database timeout after 5000ms",
+            "request_id": "req-efea40"
+          },
+          {
+            "id": "LOG-0077",
+            "timestamp": "2026-11-03T14:18:39Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-34803: database timeout after 5000ms",
+            "request_id": "req-435cd5"
+          },
+          {
+            "id": "LOG-0082",
+            "timestamp": "2026-11-03T14:22:46Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-81372: database timeout after 5000ms",
+            "request_id": "req-7348ce"
+          }
+        ],
+        "filters": {
+          "start_time": "2026-11-03T14:00:00Z",
+          "end_time": "2026-11-03T14:30:00Z",
+          "log_type": "payment",
+          "level": "ERROR"
+        }
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "start_time": "2026-11-03T14:00:00Z",
+        "end_time": "2026-11-03T14:30:00Z",
+        "log_type": "payment",
+        "level": "ERROR",
+        "limit": 2
+      },
+      "result": {
+        "status": "ok",
+        "total_matches": 8,
+        "returned_count": 2,
+        "limit": 2,
+        "offset": 0,
+        "has_more": true,
+        "next_offset": 2,
+        "records": [
+          {
+            "id": "LOG-0064",
+            "timestamp": "2026-11-03T14:03:34Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-52132: database timeout after 5000ms",
+            "request_id": "req-f30017"
+          },
+          {
+            "id": "LOG-0066",
+            "timestamp": "2026-11-03T14:05:20Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-48603: database timeout after 5000ms",
+            "request_id": "req-1f620f"
+          }
+        ],
+        "filters": {
+          "start_time": "2026-11-03T14:00:00Z",
+          "end_time": "2026-11-03T14:30:00Z",
+          "log_type": "payment",
+          "level": "ERROR"
+        }
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "start_time": "2026-11-03T14:00:00Z",
+        "end_time": "2026-11-03T14:30:00Z",
+        "log_type": "payment",
+        "level": "ERROR",
+        "limit": 2,
+        "offset": 2
+      },
+      "result": {
+        "status": "ok",
+        "total_matches": 8,
+        "returned_count": 2,
+        "limit": 2,
+        "offset": 2,
+        "has_more": true,
+        "next_offset": 4,
+        "records": [
+          {
+            "id": "LOG-0068",
+            "timestamp": "2026-11-03T14:07:40Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-12875: database timeout after 5000ms",
+            "request_id": "req-f5139f"
+          },
+          {
+            "id": "LOG-0070",
+            "timestamp": "2026-11-03T14:09:32Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-51853: database timeout after 5000ms",
+            "request_id": "req-3ecf53"
+          }
+        ],
+        "filters": {
+          "start_time": "2026-11-03T14:00:00Z",
+          "end_time": "2026-11-03T14:30:00Z",
+          "log_type": "payment",
+          "level": "ERROR"
+        }
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "start_time": "2026-11-04T00:00:00Z"
+      },
+      "result": {
+        "status": "ok",
+        "total_matches": 0,
+        "returned_count": 0,
+        "limit": 20,
+        "offset": 0,
+        "has_more": false,
+        "next_offset": null,
+        "records": [],
+        "filters": {
+          "start_time": "2026-11-04T00:00:00Z"
+        }
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "level": "DEBUG"
+      },
+      "result": {
+        "status": "error",
+        "error": {
+          "code": "INVALID_INPUT",
+          "details": [
+            {
+              "field": "level",
+              "message": "Input should be 'INFO', 'WARNING' or 'ERROR'"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "search_logs",
+      "arguments": {
+        "start_time": "2026-11-03T15:00:00Z",
+        "end_time": "2026-11-03T14:00:00Z"
+      },
+      "result": {
+        "status": "error",
+        "error": {
+          "code": "INVALID_INPUT",
+          "details": [
+            {
+              "field": "filters",
+              "message": "Value error, start_time must be earlier than end_time."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tool": "aggregate_logs",
+      "arguments": {
+        "group_by": "level"
+      },
+      "result": {
+        "status": "ok",
+        "filters": {},
+        "total_matches": 121,
+        "group_by": "level",
+        "bucket_minutes": null,
+        "groups": [
+          {
+            "value": "INFO",
+            "count": 79,
+            "sample_ids": [
+              "LOG-0001",
+              "LOG-0002",
+              "LOG-0003"
+            ]
+          },
+          {
+            "value": "WARNING",
+            "count": 23,
+            "sample_ids": [
+              "LOG-0010",
+              "LOG-0012",
+              "LOG-0028"
+            ]
+          },
+          {
+            "value": "ERROR",
+            "count": 19,
+            "sample_ids": [
+              "LOG-0011",
+              "LOG-0043",
+              "LOG-0062"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "aggregate_logs",
+      "arguments": {
+        "start_time": "2026-11-03T14:00:00Z",
+        "end_time": "2026-11-03T14:30:00Z",
+        "log_type": "payment",
+        "level": "ERROR",
+        "group_by": "service"
+      },
+      "result": {
+        "status": "ok",
+        "filters": {
+          "start_time": "2026-11-03T14:00:00Z",
+          "end_time": "2026-11-03T14:30:00Z",
+          "log_type": "payment",
+          "level": "ERROR"
+        },
+        "total_matches": 8,
+        "group_by": "service",
+        "bucket_minutes": null,
+        "groups": [
+          {
+            "value": "payment-service",
+            "count": 8,
+            "sample_ids": [
+              "LOG-0064",
+              "LOG-0066",
+              "LOG-0068"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "aggregate_logs",
+      "arguments": {
+        "start_time": "2026-11-03T14:00:00Z",
+        "end_time": "2026-11-03T14:30:00Z",
+        "log_type": "payment",
+        "level": "ERROR",
+        "group_by": "time",
+        "bucket_minutes": 5
+      },
+      "result": {
+        "status": "ok",
+        "filters": {
+          "start_time": "2026-11-03T14:00:00Z",
+          "end_time": "2026-11-03T14:30:00Z",
+          "log_type": "payment",
+          "level": "ERROR"
+        },
+        "total_matches": 8,
+        "group_by": "time",
+        "bucket_minutes": 5,
+        "groups": [
+          {
+            "value": "2026-11-03T14:00:00Z",
+            "count": 1,
+            "sample_ids": [
+              "LOG-0064"
+            ]
+          },
+          {
+            "value": "2026-11-03T14:05:00Z",
+            "count": 3,
+            "sample_ids": [
+              "LOG-0066",
+              "LOG-0068",
+              "LOG-0070"
+            ]
+          },
+          {
+            "value": "2026-11-03T14:10:00Z",
+            "count": 1,
+            "sample_ids": [
+              "LOG-0073"
+            ]
+          },
+          {
+            "value": "2026-11-03T14:15:00Z",
+            "count": 2,
+            "sample_ids": [
+              "LOG-0075",
+              "LOG-0077"
+            ]
+          },
+          {
+            "value": "2026-11-03T14:20:00Z",
+            "count": 1,
+            "sample_ids": [
+              "LOG-0082"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_logs_by_ids",
+      "arguments": {
+        "ids": [
+          "LOG-0062",
+          "LOG-0085",
+          "LOG-9999"
+        ]
+      },
+      "result": {
+        "status": "ok",
+        "returned_count": 2,
+        "records": [
+          {
+            "id": "LOG-0062",
+            "timestamp": "2026-11-03T14:02:05Z",
+            "log_type": "database",
+            "level": "ERROR",
+            "service": "postgres",
+            "host": "db-primary",
+            "message": "Connection pool exhausted: 100/100 connections in use, 23 waiting"
+          },
+          {
+            "id": "LOG-0085",
+            "timestamp": "2026-11-03T14:31:15Z",
+            "log_type": "database",
+            "level": "WARNING",
+            "service": "postgres",
+            "host": "db-primary",
+            "message": "Leaked connections detected from payment-service (idle in transaction > 300s)"
+          }
+        ],
+        "missing_ids": [
+          "LOG-9999"
+        ]
+      }
+    },
+    {
+      "tool": "get_log_context",
+      "arguments": {
+        "log_id": "LOG-0062",
+        "before_minutes": 5,
+        "after_minutes": 5
+      },
+      "result": {
+        "status": "ok",
+        "total_matches": 8,
+        "returned_count": 8,
+        "limit": 20,
+        "offset": 0,
+        "has_more": false,
+        "next_offset": null,
+        "records": [
+          {
+            "id": "LOG-0060",
+            "timestamp": "2026-11-03T13:58:12Z",
+            "log_type": "database",
+            "level": "WARNING",
+            "service": "postgres",
+            "message": "Connection pool usage at 85% (85/100)"
+          },
+          {
+            "id": "LOG-0061",
+            "timestamp": "2026-11-03T14:01:40Z",
+            "log_type": "database",
+            "level": "WARNING",
+            "service": "postgres",
+            "message": "Connection pool usage at 97% (97/100)"
+          },
+          {
+            "id": "LOG-0062",
+            "timestamp": "2026-11-03T14:02:05Z",
+            "log_type": "database",
+            "level": "ERROR",
+            "service": "postgres",
+            "message": "Connection pool exhausted: 100/100 connections in use, 23 waiting"
+          },
+          {
+            "id": "LOG-0063",
+            "timestamp": "2026-11-03T14:03:34Z",
+            "log_type": "api",
+            "level": "INFO",
+            "service": "api-gateway",
+            "message": "GET /v1/orders 200 in 153ms",
+            "request_id": "req-5c3bd5"
+          },
+          {
+            "id": "LOG-0064",
+            "timestamp": "2026-11-03T14:03:34Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-52132: database timeout after 5000ms",
+            "request_id": "req-f30017"
+          },
+          {
+            "id": "LOG-0065",
+            "timestamp": "2026-11-03T14:04:40Z",
+            "log_type": "api",
+            "level": "ERROR",
+            "service": "api-gateway",
+            "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+            "request_id": "req-1bc54d"
+          },
+          {
+            "id": "LOG-0066",
+            "timestamp": "2026-11-03T14:05:20Z",
+            "log_type": "payment",
+            "level": "ERROR",
+            "service": "payment-service",
+            "message": "Payment authorization failed for order ORD-48603: database timeout after 5000ms",
+            "request_id": "req-1f620f"
+          },
+          {
+            "id": "LOG-0067",
+            "timestamp": "2026-11-03T14:06:53Z",
+            "log_type": "api",
+            "level": "WARNING",
+            "service": "api-gateway",
+            "message": "GET /v1/orders slow response 4545ms",
+            "request_id": "req-e4089a"
+          }
+        ],
+        "anchor_id": "LOG-0062",
+        "anchor_found": true,
+        "window": {
+          "start_time": "2026-11-03T13:57:05Z",
+          "end_time": "2026-11-03T14:07:05Z",
+          "end_inclusive": true
+        }
+      }
+    }
+  ]
+}

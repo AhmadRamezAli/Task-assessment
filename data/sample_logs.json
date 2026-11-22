@@ -1,0 +1,1177 @@
+[
+  {
+    "id": "LOG-0001",
+    "timestamp": "2026-11-03T00:00:20Z",
+    "log_type": "database",
+    "level": "INFO",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Autovacuum completed on table orders"
+  },
+  {
+    "id": "LOG-0002",
+    "timestamp": "2026-11-03T00:05:09Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 76ms",
+    "request_id": "req-537cba"
+  },
+  {
+    "id": "LOG-0003",
+    "timestamp": "2026-11-03T00:16:33Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "User u9328 logged in successfully"
+  },
+  {
+    "id": "LOG-0004",
+    "timestamp": "2026-11-03T00:28:48Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 96.00 EUR for order ORD-34809",
+    "request_id": "req-a66144"
+  },
+  {
+    "id": "LOG-0005",
+    "timestamp": "2026-11-03T00:39:39Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 69ms",
+    "request_id": "req-1bffe8"
+  },
+  {
+    "id": "LOG-0006",
+    "timestamp": "2026-11-03T01:15:33Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 65ms",
+    "request_id": "req-0f3a2d"
+  },
+  {
+    "id": "LOG-0007",
+    "timestamp": "2026-11-03T01:20:29Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 121ms",
+    "request_id": "req-e830d5"
+  },
+  {
+    "id": "LOG-0008",
+    "timestamp": "2026-11-03T02:00:00Z",
+    "log_type": "scheduler",
+    "level": "INFO",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job nightly-backup started"
+  },
+  {
+    "id": "LOG-0009",
+    "timestamp": "2026-11-03T02:07:25Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 128ms",
+    "request_id": "req-149b0a"
+  },
+  {
+    "id": "LOG-0010",
+    "timestamp": "2026-11-03T02:09:41Z",
+    "log_type": "scheduler",
+    "level": "WARNING",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job nightly-backup running longer than expected (9m41s, SLA 8m)"
+  },
+  {
+    "id": "LOG-0011",
+    "timestamp": "2026-11-03T02:12:03Z",
+    "log_type": "scheduler",
+    "level": "ERROR",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job nightly-backup failed: snapshot upload timed out after 120s"
+  },
+  {
+    "id": "LOG-0012",
+    "timestamp": "2026-11-03T02:12:04Z",
+    "log_type": "database",
+    "level": "WARNING",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Long-running snapshot transaction cancelled by backup client"
+  },
+  {
+    "id": "LOG-0013",
+    "timestamp": "2026-11-03T02:15:00Z",
+    "log_type": "scheduler",
+    "level": "INFO",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job nightly-backup retry 1/3 started"
+  },
+  {
+    "id": "LOG-0014",
+    "timestamp": "2026-11-03T02:19:13Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 168ms",
+    "request_id": "req-f721c8"
+  },
+  {
+    "id": "LOG-0015",
+    "timestamp": "2026-11-03T02:24:37Z",
+    "log_type": "scheduler",
+    "level": "INFO",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job nightly-backup completed successfully on retry 1 (9m37s)"
+  },
+  {
+    "id": "LOG-0016",
+    "timestamp": "2026-11-03T02:31:08Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u4207 logged in successfully"
+  },
+  {
+    "id": "LOG-0017",
+    "timestamp": "2026-11-03T03:16:02Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 62ms",
+    "request_id": "req-ada5a9"
+  },
+  {
+    "id": "LOG-0018",
+    "timestamp": "2026-11-03T03:27:48Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 94ms",
+    "request_id": "req-f50a7e"
+  },
+  {
+    "id": "LOG-0019",
+    "timestamp": "2026-11-03T03:59:51Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 336.00 EUR for order ORD-87651",
+    "request_id": "req-fd1b13"
+  },
+  {
+    "id": "LOG-0020",
+    "timestamp": "2026-11-03T04:06:45Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 138ms",
+    "request_id": "req-37d909"
+  },
+  {
+    "id": "LOG-0021",
+    "timestamp": "2026-11-03T04:33:06Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "User u6737 logged in successfully"
+  },
+  {
+    "id": "LOG-0022",
+    "timestamp": "2026-11-03T04:46:51Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 45ms",
+    "request_id": "req-44c9ce"
+  },
+  {
+    "id": "LOG-0023",
+    "timestamp": "2026-11-03T05:11:41Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 119ms",
+    "request_id": "req-1d7e57"
+  },
+  {
+    "id": "LOG-0024",
+    "timestamp": "2026-11-03T05:13:11Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 166ms",
+    "request_id": "req-da66b4"
+  },
+  {
+    "id": "LOG-0025",
+    "timestamp": "2026-11-03T06:00:47Z",
+    "log_type": "database",
+    "level": "INFO",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Autovacuum completed on table orders"
+  },
+  {
+    "id": "LOG-0026",
+    "timestamp": "2026-11-03T06:22:16Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 92ms",
+    "request_id": "req-a4fd07"
+  },
+  {
+    "id": "LOG-0027",
+    "timestamp": "2026-11-03T06:22:26Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u5025 logged in successfully"
+  },
+  {
+    "id": "LOG-0028",
+    "timestamp": "2026-11-03T06:45:00Z",
+    "log_type": "payment",
+    "level": "WARNING",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Currency rate feed delayed by 4 minutes; using cached rates"
+  },
+  {
+    "id": "LOG-0029",
+    "timestamp": "2026-11-03T06:53:43Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 40.00 EUR for order ORD-95033",
+    "request_id": "req-30c1bf"
+  },
+  {
+    "id": "LOG-0030",
+    "timestamp": "2026-11-03T06:55:58Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 149ms",
+    "request_id": "req-fd07aa"
+  },
+  {
+    "id": "LOG-0031",
+    "timestamp": "2026-11-03T07:03:20Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 127ms",
+    "request_id": "req-bc22dc"
+  },
+  {
+    "id": "LOG-0032",
+    "timestamp": "2026-11-03T07:46:34Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 111ms",
+    "request_id": "req-c90e83"
+  },
+  {
+    "id": "LOG-0033",
+    "timestamp": "2026-11-03T08:00:22Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u6756 logged in successfully"
+  },
+  {
+    "id": "LOG-0034",
+    "timestamp": "2026-11-03T08:07:17Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 168ms",
+    "request_id": "req-8cc789"
+  },
+  {
+    "id": "LOG-0035",
+    "timestamp": "2026-11-03T08:36:18Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 177ms",
+    "request_id": "req-aa008e"
+  },
+  {
+    "id": "LOG-0036",
+    "timestamp": "2026-11-03T09:11:40Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 121ms",
+    "request_id": "req-d0a598"
+  },
+  {
+    "id": "LOG-0037",
+    "timestamp": "2026-11-03T09:14:10Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 1)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0038",
+    "timestamp": "2026-11-03T09:15:17Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 2)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0039",
+    "timestamp": "2026-11-03T09:16:24Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 3)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0040",
+    "timestamp": "2026-11-03T09:17:31Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 4)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0041",
+    "timestamp": "2026-11-03T09:18:38Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 5)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0042",
+    "timestamp": "2026-11-03T09:19:45Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Failed login for user j.smith from 203.0.113.45 (attempt 6)",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0043",
+    "timestamp": "2026-11-03T09:20:02Z",
+    "log_type": "auth",
+    "level": "ERROR",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "Account j.smith locked after 6 failed login attempts",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0044",
+    "timestamp": "2026-11-03T09:21:30Z",
+    "log_type": "auth",
+    "level": "WARNING",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "IP 203.0.113.45 added to temporary deny list for 30 minutes",
+    "client_ip": "203.0.113.45"
+  },
+  {
+    "id": "LOG-0045",
+    "timestamp": "2026-11-03T09:43:12Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 22.00 EUR for order ORD-10255",
+    "request_id": "req-d128d0"
+  },
+  {
+    "id": "LOG-0046",
+    "timestamp": "2026-11-03T09:54:15Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 78ms",
+    "request_id": "req-8c5440"
+  },
+  {
+    "id": "LOG-0047",
+    "timestamp": "2026-11-03T10:02:50Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 159ms",
+    "request_id": "req-751bd4"
+  },
+  {
+    "id": "LOG-0048",
+    "timestamp": "2026-11-03T10:04:43Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "User u7628 logged in successfully"
+  },
+  {
+    "id": "LOG-0049",
+    "timestamp": "2026-11-03T10:32:28Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 79ms",
+    "request_id": "req-b9e64d"
+  },
+  {
+    "id": "LOG-0050",
+    "timestamp": "2026-11-03T11:05:00Z",
+    "log_type": "scheduler",
+    "level": "WARNING",
+    "service": "job-scheduler",
+    "host": "cron-01",
+    "message": "Job invoice-export skipped: previous run still active"
+  },
+  {
+    "id": "LOG-0051",
+    "timestamp": "2026-11-03T11:05:38Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 174ms",
+    "request_id": "req-c4936c"
+  },
+  {
+    "id": "LOG-0052",
+    "timestamp": "2026-11-03T11:55:49Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 134ms",
+    "request_id": "req-c48c6b"
+  },
+  {
+    "id": "LOG-0053",
+    "timestamp": "2026-11-03T12:00:53Z",
+    "log_type": "database",
+    "level": "INFO",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Autovacuum completed on table orders"
+  },
+  {
+    "id": "LOG-0054",
+    "timestamp": "2026-11-03T12:27:10Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 63ms",
+    "request_id": "req-216f8b"
+  },
+  {
+    "id": "LOG-0055",
+    "timestamp": "2026-11-03T12:32:03Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 250.00 EUR for order ORD-48448",
+    "request_id": "req-22f958"
+  },
+  {
+    "id": "LOG-0056",
+    "timestamp": "2026-11-03T12:33:10Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u7625 logged in successfully"
+  },
+  {
+    "id": "LOG-0057",
+    "timestamp": "2026-11-03T12:45:57Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 162ms",
+    "request_id": "req-3dc637"
+  },
+  {
+    "id": "LOG-0058",
+    "timestamp": "2026-11-03T13:03:46Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 65ms",
+    "request_id": "req-089c91"
+  },
+  {
+    "id": "LOG-0059",
+    "timestamp": "2026-11-03T13:28:18Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 111ms",
+    "request_id": "req-d98a68"
+  },
+  {
+    "id": "LOG-0060",
+    "timestamp": "2026-11-03T13:58:12Z",
+    "log_type": "database",
+    "level": "WARNING",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Connection pool usage at 85% (85/100)"
+  },
+  {
+    "id": "LOG-0061",
+    "timestamp": "2026-11-03T14:01:40Z",
+    "log_type": "database",
+    "level": "WARNING",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Connection pool usage at 97% (97/100)"
+  },
+  {
+    "id": "LOG-0062",
+    "timestamp": "2026-11-03T14:02:05Z",
+    "log_type": "database",
+    "level": "ERROR",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Connection pool exhausted: 100/100 connections in use, 23 waiting"
+  },
+  {
+    "id": "LOG-0063",
+    "timestamp": "2026-11-03T14:03:34Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 153ms",
+    "request_id": "req-5c3bd5"
+  },
+  {
+    "id": "LOG-0064",
+    "timestamp": "2026-11-03T14:03:34Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment authorization failed for order ORD-52132: database timeout after 5000ms",
+    "request_id": "req-f30017"
+  },
+  {
+    "id": "LOG-0065",
+    "timestamp": "2026-11-03T14:04:40Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-1bc54d"
+  },
+  {
+    "id": "LOG-0066",
+    "timestamp": "2026-11-03T14:05:20Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment authorization failed for order ORD-48603: database timeout after 5000ms",
+    "request_id": "req-1f620f"
+  },
+  {
+    "id": "LOG-0067",
+    "timestamp": "2026-11-03T14:06:53Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders slow response 4545ms",
+    "request_id": "req-e4089a"
+  },
+  {
+    "id": "LOG-0068",
+    "timestamp": "2026-11-03T14:07:40Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment authorization failed for order ORD-12875: database timeout after 5000ms",
+    "request_id": "req-f5139f"
+  },
+  {
+    "id": "LOG-0069",
+    "timestamp": "2026-11-03T14:08:01Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-537419"
+  },
+  {
+    "id": "LOG-0070",
+    "timestamp": "2026-11-03T14:09:32Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment authorization failed for order ORD-51853: database timeout after 5000ms",
+    "request_id": "req-3ecf53"
+  },
+  {
+    "id": "LOG-0071",
+    "timestamp": "2026-11-03T14:10:00Z",
+    "log_type": "database",
+    "level": "ERROR",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Query cancelled: statement timeout (5000ms) on SELECT ... FROM payments"
+  },
+  {
+    "id": "LOG-0072",
+    "timestamp": "2026-11-03T14:11:40Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-ea5c50"
+  },
+  {
+    "id": "LOG-0073",
+    "timestamp": "2026-11-03T14:12:11Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment authorization failed for order ORD-26045: database timeout after 5000ms",
+    "request_id": "req-7ce8c8"
+  },
+  {
+    "id": "LOG-0074",
+    "timestamp": "2026-11-03T14:13:52Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders slow response 3099ms",
+    "request_id": "req-7336a9"
+  },
+  {
+    "id": "LOG-0075",
+    "timestamp": "2026-11-03T14:15:34Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment authorization failed for order ORD-55989: database timeout after 5000ms",
+    "request_id": "req-efea40"
+  },
+  {
+    "id": "LOG-0076",
+    "timestamp": "2026-11-03T14:16:58Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-b7d7ba"
+  },
+  {
+    "id": "LOG-0077",
+    "timestamp": "2026-11-03T14:18:39Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment authorization failed for order ORD-34803: database timeout after 5000ms",
+    "request_id": "req-435cd5"
+  },
+  {
+    "id": "LOG-0078",
+    "timestamp": "2026-11-03T14:19:47Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders slow response 4048ms",
+    "request_id": "req-7f80f7"
+  },
+  {
+    "id": "LOG-0079",
+    "timestamp": "2026-11-03T14:20:30Z",
+    "log_type": "database",
+    "level": "ERROR",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Connection pool exhausted: 100/100 connections in use, 41 waiting"
+  },
+  {
+    "id": "LOG-0080",
+    "timestamp": "2026-11-03T14:21:36Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-b0a734"
+  },
+  {
+    "id": "LOG-0081",
+    "timestamp": "2026-11-03T14:22:36Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "User u6468 logged in successfully"
+  },
+  {
+    "id": "LOG-0082",
+    "timestamp": "2026-11-03T14:22:46Z",
+    "log_type": "payment",
+    "level": "ERROR",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment authorization failed for order ORD-81372: database timeout after 5000ms",
+    "request_id": "req-7348ce"
+  },
+  {
+    "id": "LOG-0083",
+    "timestamp": "2026-11-03T14:25:59Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders slow response 4243ms",
+    "request_id": "req-829a78"
+  },
+  {
+    "id": "LOG-0084",
+    "timestamp": "2026-11-03T14:27:51Z",
+    "log_type": "api",
+    "level": "ERROR",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "POST /v1/payments 502 Bad Gateway: upstream payment-service timeout",
+    "request_id": "req-ae44c6"
+  },
+  {
+    "id": "LOG-0085",
+    "timestamp": "2026-11-03T14:31:15Z",
+    "log_type": "database",
+    "level": "WARNING",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Leaked connections detected from payment-service (idle in transaction > 300s)"
+  },
+  {
+    "id": "LOG-0086",
+    "timestamp": "2026-11-03T14:35:00Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "payment-service deployment rolled back to v2.14.1"
+  },
+  {
+    "id": "LOG-0087",
+    "timestamp": "2026-11-03T14:41:08Z",
+    "log_type": "database",
+    "level": "INFO",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Connection pool recovered: 34/100 connections in use"
+  },
+  {
+    "id": "LOG-0088",
+    "timestamp": "2026-11-03T14:44:00Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "POST /v1/payments error rate back to baseline (0.2%)"
+  },
+  {
+    "id": "LOG-0089",
+    "timestamp": "2026-11-03T14:52:07Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 113ms",
+    "request_id": "req-497250"
+  },
+  {
+    "id": "LOG-0090",
+    "timestamp": "2026-11-03T15:05:05Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 96ms",
+    "request_id": "req-dff74e"
+  },
+  {
+    "id": "LOG-0091",
+    "timestamp": "2026-11-03T15:39:36Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-01",
+    "message": "Payment captured: 183.00 EUR for order ORD-51670",
+    "request_id": "req-de4567"
+  },
+  {
+    "id": "LOG-0092",
+    "timestamp": "2026-11-03T15:53:06Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 167ms",
+    "request_id": "req-095738"
+  },
+  {
+    "id": "LOG-0093",
+    "timestamp": "2026-11-03T16:10:16Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u8179 logged in successfully"
+  },
+  {
+    "id": "LOG-0094",
+    "timestamp": "2026-11-03T16:22:32Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 56ms",
+    "request_id": "req-fdcf6e"
+  },
+  {
+    "id": "LOG-0095",
+    "timestamp": "2026-11-03T16:23:48Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 92ms",
+    "request_id": "req-f961dc"
+  },
+  {
+    "id": "LOG-0096",
+    "timestamp": "2026-11-03T17:36:14Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 144ms",
+    "request_id": "req-db6d38"
+  },
+  {
+    "id": "LOG-0097",
+    "timestamp": "2026-11-03T17:46:43Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 172ms",
+    "request_id": "req-06abb4"
+  },
+  {
+    "id": "LOG-0098",
+    "timestamp": "2026-11-03T18:00:44Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment captured: 173.00 EUR for order ORD-13211",
+    "request_id": "req-d17967"
+  },
+  {
+    "id": "LOG-0099",
+    "timestamp": "2026-11-03T18:00:53Z",
+    "log_type": "database",
+    "level": "INFO",
+    "service": "postgres",
+    "host": "db-primary",
+    "message": "Autovacuum completed on table orders"
+  },
+  {
+    "id": "LOG-0100",
+    "timestamp": "2026-11-03T18:22:17Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 153ms",
+    "request_id": "req-62e550"
+  },
+  {
+    "id": "LOG-0101",
+    "timestamp": "2026-11-03T18:46:44Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 78ms",
+    "request_id": "req-28aaf6"
+  },
+  {
+    "id": "LOG-0102",
+    "timestamp": "2026-11-03T18:49:35Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-01",
+    "message": "User u9586 logged in successfully"
+  },
+  {
+    "id": "LOG-0103",
+    "timestamp": "2026-11-03T19:19:34Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 178ms",
+    "request_id": "req-355222"
+  },
+  {
+    "id": "LOG-0104",
+    "timestamp": "2026-11-03T19:27:03Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 168ms",
+    "request_id": "req-4acff9"
+  },
+  {
+    "id": "LOG-0105",
+    "timestamp": "2026-11-03T19:30:21Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/search p95 latency 2137ms exceeds 1000ms SLO",
+    "request_id": "req-341385"
+  },
+  {
+    "id": "LOG-0106",
+    "timestamp": "2026-11-03T19:33:30Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/search p95 latency 1477ms exceeds 1000ms SLO",
+    "request_id": "req-b487b9"
+  },
+  {
+    "id": "LOG-0107",
+    "timestamp": "2026-11-03T19:37:22Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/search p95 latency 1646ms exceeds 1000ms SLO",
+    "request_id": "req-2e9abc"
+  },
+  {
+    "id": "LOG-0108",
+    "timestamp": "2026-11-03T19:41:36Z",
+    "log_type": "api",
+    "level": "WARNING",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/search p95 latency 2249ms exceeds 1000ms SLO",
+    "request_id": "req-44d657"
+  },
+  {
+    "id": "LOG-0109",
+    "timestamp": "2026-11-03T19:46:00Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/search p95 latency back under SLO (640ms)"
+  },
+  {
+    "id": "LOG-0110",
+    "timestamp": "2026-11-03T20:11:15Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u8534 logged in successfully"
+  },
+  {
+    "id": "LOG-0111",
+    "timestamp": "2026-11-03T20:14:53Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 133ms",
+    "request_id": "req-e78891"
+  },
+  {
+    "id": "LOG-0112",
+    "timestamp": "2026-11-03T20:51:33Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 148ms",
+    "request_id": "req-a8503e"
+  },
+  {
+    "id": "LOG-0113",
+    "timestamp": "2026-11-03T21:24:02Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-01",
+    "message": "GET /v1/orders 200 in 160ms",
+    "request_id": "req-06a09f"
+  },
+  {
+    "id": "LOG-0114",
+    "timestamp": "2026-11-03T21:43:41Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 77ms",
+    "request_id": "req-9219a5"
+  },
+  {
+    "id": "LOG-0115",
+    "timestamp": "2026-11-03T21:50:59Z",
+    "log_type": "payment",
+    "level": "INFO",
+    "service": "payment-service",
+    "host": "pay-02",
+    "message": "Payment captured: 203.00 EUR for order ORD-52182",
+    "request_id": "req-471bec"
+  },
+  {
+    "id": "LOG-0116",
+    "timestamp": "2026-11-03T22:15:00Z",
+    "log_type": "database",
+    "level": "WARNING",
+    "service": "postgres",
+    "host": "db-replica-1",
+    "message": "Replication lag on db-replica-1 reached 12s"
+  },
+  {
+    "id": "LOG-0117",
+    "timestamp": "2026-11-03T22:26:05Z",
+    "log_type": "auth",
+    "level": "INFO",
+    "service": "auth-service",
+    "host": "auth-02",
+    "message": "User u3762 logged in successfully"
+  },
+  {
+    "id": "LOG-0118",
+    "timestamp": "2026-11-03T22:38:00Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-02",
+    "message": "GET /v1/orders 200 in 53ms",
+    "request_id": "req-0c1ef4"
+  },
+  {
+    "id": "LOG-0119",
+    "timestamp": "2026-11-03T22:47:38Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 168ms",
+    "request_id": "req-85e55f"
+  },
+  {
+    "id": "LOG-0120",
+    "timestamp": "2026-11-03T23:26:58Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 142ms",
+    "request_id": "req-25481f"
+  },
+  {
+    "id": "LOG-0121",
+    "timestamp": "2026-11-03T23:29:12Z",
+    "log_type": "api",
+    "level": "INFO",
+    "service": "api-gateway",
+    "host": "gw-03",
+    "message": "GET /v1/orders 200 in 165ms",
+    "request_id": "req-473216"
+  }
+]

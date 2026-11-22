@@ -1,0 +1,6 @@
+.env
+/config/assessment.env
+.venv/
+__pycache__/
+.pytest_cache/
+workspace/

@@ -1,0 +1,34 @@
+# Log Analysis Assistant - project configuration
+#
+# The [model] section is selected by the assessment team.
+# Keep the provider, model and proxy URL as supplied so both candidates
+# use the same configuration.
+
+[model]
+provider = "groq"
+name = "openai/gpt-oss-20b"
+base_url = "https://groq-assessment-proxy-7c41e2.masroufi.workers.dev/openai/v1"
+reasoning_effort = "low"
+temperature = 0.0
+# Maximum tokens the model may generate per call.
+max_tokens = 1024
+# Let the SDK honor Retry-After when the shared Groq token budget fills.
+max_retries = 5
+timeout_seconds = 90
+# Client-side request throttle for a single process.
+requests_per_minute = 20
+
+# Groq's published free baseline for the selected model. The proxy shares
+# upstream limits across its clients. These values are informational.
+[model.limits]
+context_window_tokens = 131072
+free_tier_requests_per_minute = 30
+free_tier_requests_per_day = 1000
+free_tier_tokens_per_minute = 8000
+free_tier_tokens_per_day = 200000
+
+[data]
+# Path is relative to the project root.
+log_file = "data/sample_logs.json"
+
+# Add any further configuration your implementation needs below.
