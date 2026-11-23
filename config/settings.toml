@@ -32,3 +32,17 @@ free_tier_tokens_per_day = 200000
 log_file = "data/sample_logs.json"
 
 # Add any further configuration your implementation needs below.
+
+[compaction]
+# Estimated input size that activates official automatic summarization.
+input_token_threshold = 6000
+# Approximate recent conversation budget retained verbatim, alongside the summary.
+keep_recent_tokens = 1200
+
+[tool_limits]
+# Maximum allowed tool calls in one main-agent invocation; reset on the next turn.
+calls_per_turn = 10
+
+[evidence]
+# Questions, model-input messages, answers and a token usage table.
+output_file = "evidence/conversations.txt"
